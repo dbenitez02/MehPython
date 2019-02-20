@@ -39,15 +39,15 @@ while age != 0:
         
         # If zipcode is valid then display address related, otherwise send error.
         if zipcode == 93305:
-            print("Your polling station is 123 Panorama Drive.")
+            print("Your polling station is 123 Panorama Drive.\n\n")
         elif zipcode == 93306:
-            print("Your polling station is 6143 Fairfax Drive.")
+            print("Your polling station is 6143 Fairfax Drive.\n\n")
         elif zipcode == 93307:
-            print("Your polling station is 21121 B Street")
+            print("Your polling station is 21121 B Street\n\n")
         elif zipcode == 93308:
-            print("Your polling station is 863 Desmond Ct.")
+            print("Your polling station is 863 Desmond Ct.\n\n")
         elif zipcode == 93309:
-            print("Your polling station is 7332 Del Canto Ct.")
+            print("Your polling station is 7332 Del Canto Ct.\n\n")
         else:
                 print("Error –unknown zip code\n")
 
