@@ -1,3 +1,6 @@
+# Better version of Assignment 1.
+# Utilize functions and avoid global variables.
+
 def sales(n):
     TAX = float(0.08)
 
