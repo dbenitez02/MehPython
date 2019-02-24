@@ -2,7 +2,7 @@
 # Program name: Assignment3.py
 # Author: Daniel Benitez
 # Date: 02/26/2019
-# Purpose: Allow users to determine their voter polling station 
+# Purpose: Allow users to determine their voter polling station.
 #-----------------------------------------------------------------------
 # GLOBAL VARIABLE DEFINITIONS (Use only until functions)
 age = 1
@@ -49,7 +49,7 @@ while age != 0:
         elif zipcode == 93309:
             print("Your polling station is 7332 Del Canto Ct.\n\n")
         else:
-                print("Error –unknown zip code\n")
+                print("Error –unknown zip code.\n")
 
 
 
