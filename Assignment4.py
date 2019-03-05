@@ -18,25 +18,25 @@
 # FUNCTION DEFINITIONS
 
 # Calculate conversion to Celsius and output result.
-def tempConversion():
+def calculateCelsius():
     farh = float(input("\nPlease enter a temperature to convert to Celsuis: "))
-    celsuis = ((farh + 32.00) / 1.8)
-    return print("{:.3f}f is {:.3f}c\n".format(farh, celsuis))
+    celsuis = ((farh - 32.00) / 1.8)
+    return print("{:.3f}f is {:.3f}c\n\n".format(farh, celsuis))
 
 # Calculate conversion to Kilometers and output result.
-def distConversion():
+def calculateKilometers():
     mile = float(input("\nEnter number of miles to convert to kilometers: "))
     kilometer = (mile / (0.621371192237))
-    return print("{:.3f} miles is {:.3f} kilometers.\n".format(mile, kilometer))
+    return print("{:.3f} miles is {:.3f} kilometers.\n\n".format(mile, kilometer))
 
 # Calculate conversion to Kilograms and ouput result.
-def weightConversion():
+def calculateKilograms():
     pound = float(input("\nEnter number of pounds to convert to kilograms: "))
     kilogram = (pound / 2.2)
-    return print("{:.3f} pounds is {:.3f} kilograms\n".format(pound, kilogram))
+    return print("{:.3f} pounds is {:.3f} kilograms\n\n".format(pound, kilogram))
 
 # The main menu.
-def menu():
+def getMenuSelection():
 
     while True:
         print("CONVERSION PROGRAM\n\n")
@@ -50,21 +50,21 @@ def menu():
         # Check for correct input otherwise send error message.
         # If valid, call function 
         if k == 'T':
-            tempConversion()
+            calculateCelsius()
         elif k == 'D':
-            distConversion()
+            calculateKilometers()
         elif k == 'W':
-            weightConversion()
+            calculateKilograms()
         elif k == 'Q':
             return input("\nRun complete. Press the Enter key to exit.")
         else:
-            print("Error -Invalid option selected.  You may only enter T, D or W.\n")
+            print("\nError -Invalid option selected.  You may only enter T, D or W.\n")
 
 #-----------------------------------------------------------------------
 # PROGRAM'S MAIN LOGIC
 #
 
 # Thats all..
-menu()
+getMenuSelection()
 
 
