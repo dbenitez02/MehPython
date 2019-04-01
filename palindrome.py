@@ -6,6 +6,7 @@ def pal(word):
     last = len(word) - 1
 
     # Loop while the first position is less than the last position
+    # Start from both ends of the word.
     while (first < last):
 
         # Both condition statements check for white spaces
@@ -21,4 +22,5 @@ def pal(word):
         first += 1
         last -= 1
 
+# ---Main code---
 pal(input("Enter a word: "))
