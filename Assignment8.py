@@ -15,44 +15,44 @@
 # CLASS DEFINITIONS
 
 class Employee:
-    # Initiate Employee class
-    # Store Name and ID of employee
+    
     def __init__(self, employeeName, employeeNum):
         self.__employeeName = employeeName
         self.__employeeNum = employeeNum
     
     def getName(self):
-        name = self.__employeeName
-        return name
+        return self.__employeeName
     
     def getNum(self):
-        num = self.__employeeNum
-        return num
+        return self.__employeeNum
     
     def __str__(self):
         output = "Name: " + self.__employeeName + "\n"
         output += "Employee ID: " + self.__employeeNum
         return output
 
+# ProductionWorker inherits employeeName and employeeNum from the Employee class.
 class ProductionWorker(Employee):
-    # Initiate ProductionWorker class under Employee class.
-    # Store Shift number and Pay rate.
-    def __init__(self, employeeName, employeeNum, shiftNum, hourlyPay):
-        super().__init__(employeeName, employeeNum)
 
+    def __init__(self, employeeName, employeeNum, shiftNum, hourlyPay):
+        # Inherit the Employee class.
+        Employee.__init__(self, employeeName, employeeNum)        
+        
+        self.__employeeName = employeeName
+        self.__employeeNum = employeeNum
         self.__shiftNum = shiftNum
         self.__hourlyPay = float(hourlyPay)
     
     def getShiftNum(self):
-        shift = self.__shiftNum
-        return shift
+        return self.__shiftNum
 
     def getHourlyPay(self):
-        pay = self.__hourlyPay
-        return pay
+        return self.__hourlyPay
 
     def __str__(self):
-        output = "\nShift: " + self.__shiftNum + "\n"
+        output = "Name: " + self.__employeeName + "\n"
+        output += "Employee ID: " + self.__employeeNum
+        output += "\nShift: " + self.__shiftNum + "\n"
         output += "Hourly Pay Rate: ${:.2f}".format(self.__hourlyPay) 
         return output
 #-----------------------------------------------------------------------
@@ -64,25 +64,11 @@ def main():
     shiftNum = input("Enter Shift Number: ")
     hourlyPay = input("Enter Pay Rate: ")
 
-    x = Employee(name, employeeID)
     y = ProductionWorker(name, employeeID, shiftNum, hourlyPay)
     
-    output(x, y)
-
-def output(a, b):
-    # a is Employee() Class.
-    # b is ProdectionWorker() Class.
-
     print("\nProduction worker information")
     print("-" * 29)
-
-    # Using getters from both classes to output information.
-    print("Name: " + a.getName())
-    print("Employee ID: " + a.getNum())
-    print("Shift: " + b.getShiftNum())
-    print("Hourly Pay Rate: ${:.2f}".format(b.getHourlyPay()))
-    
-    print("\nProduction worker information")
+    print(y)
 
 #-----------------------------------------------------------------------
 # PROGRAM'S MAIN LOGIC
