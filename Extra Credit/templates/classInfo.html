@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <!-- CSS File-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
         <!-- meta tags -->
         <meta charset="utf-8">
@@ -14,13 +14,14 @@
     </head>
     <body>
         <nav id="navbar">
-            <a href="index.html">Homepage</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="class.html">Comp B10</a>
+            <a href="{{ url_for('index') }}">Homepage</a>
+            <a href="{{ url_for('portfolio') }}">Portfolio</a>
+            <a href="{{ url_for('classInfo') }}">Comp B10</a>
+            <a href="https://github.com/dbenitez02" target="_blank">Github</a>
         </nav>
         <h1 style="padding-bottom: 50px; text-align: center;">Comp B10 summed up</h1>
         <div id="Book">
-            <img src="Website/Python_Cover.jpg" alt="Starting out with Python">
+            <img src="/static/Website/Python_Cover.jpg" alt="Starting out with Python">
             <p id="bookInfo">Starting Out With Python was the book used for the class.</p>
 
         </div>

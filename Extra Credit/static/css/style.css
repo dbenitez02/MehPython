@@ -16,28 +16,34 @@
 #navbar a:hover {
     background-color: #999;
 }
+
 #BC_Info {
     padding: 20px;
     text-align: right;
 }
+
 #Class_Info {
     padding: 20px;
 }
+
 #Class_Info h2 {
     text-align: center;
     padding: 20px;
 }
+
 
 /*---------------- Portfolio Page ----------------*/
 h1 {
     text-align: center;
     font-size: 40px; 
 }
+
 #intro {
     width: 600px;
     text-align: center;
     padding: 20px;
-}   
+}
+   
 #bio {
     width: 900px;
 }

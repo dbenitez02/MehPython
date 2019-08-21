@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- CSS File-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="height=device-height, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <title>A little about Python</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="{{ url_for('index') }}">Homepage</a>
+            <a href="{{ url_for('portfolio') }}">Portfolio</a>
+            <a href="{{ url_for('classInfo') }}">Comp B10</a>
+            <a href="https://github.com/dbenitez02" target="_blank">Github</a>
+        </nav>
+
+        <h1 style="text-align: center">Homepage</h1>
+
+        <div id="BC_Info" class="container">
+            <h2 style="text-align: center;">Bakersfield College</h2>
+
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img src="/static/Website/BC_Logo.jpg" alt="BC Logo">
+                </div>
+                <div class="col">
+                    <p style="text-align: center;">
+                        Bakersfield college was established in 1913. The school offers
+                        many majors such as Computer Science. Bakersfield College serves
+                        over 33,000 students each year. There are multiple campuses located
+                        around Bakersfield like BC SouthWest and the weil Institute in downtown
+                        Bakersfield.
+                    </p>
+            </div>
+            </div>
+        </div>
+        <div id="Class_Info" class="container">
+            <h2>Comp B10</h2>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <p>
+                        Comp B10 is Intro to Programming Methods using Python. This is a beginners
+                        programming course for anyone who want to get their feet in the water with 
+                        programming.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="/static/Website/Python_Logo.png" alt="Python">
+                </div>
+            </div>
+        </div>
+        <footer style="padding-top: 20px; text-align: center">Developed by Daniel Benitez.</footer>
+    </body>    
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <!-- CSS File-->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
         <!-- meta tags -->
         <meta charset="utf-8">
@@ -14,9 +14,10 @@
     </head>
     <body>
         <nav id="navbar">
-            <a href="index.html">Homepage</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="class.html">Comp B10</a>
+            <a href="{{ url_for('index') }}">Homepage</a>
+            <a href="{{ url_for('portfolio') }}">Portfolio</a>
+            <a href="{{ url_for('classInfo') }}">Comp B10</a>
+            <a href="https://github.com/dbenitez02" target="_blank">Github</a>
         </nav>
 
         <h1 style="text-align: center">Homepage</h1>
@@ -26,7 +27,7 @@
 
             <div class="row justify-content-center">
                 <div class="col">
-                    <img src="Website/BC_Logo.jpg" alt="BC Logo">
+                    <img src="/static/Website/BC_Logo.jpg" alt="BC Logo">
                 </div>
                 <div class="col">
                     <p style="text-align: center;">
@@ -50,9 +51,10 @@
                     </p>
                 </div>
                 <div class="col">
-                    <img src="Website/Python_Logo.png" alt="Python">
+                    <img src="/static/Website/Python_Logo.png" alt="Python">
                 </div>
             </div>
         </div>
+        <footer style="padding-top: 20px; text-align: center">Developed by Daniel Benitez.</footer>
     </body>    
 </html>

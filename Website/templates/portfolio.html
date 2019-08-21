@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- CSS File-->
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <title>Portfolio</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="{{ url_for('index') }}">Homepage</a>
+            <a href="{{ url_for('portfolio') }}">Portfolio</a>
+            <a href="{{ url_for('classInfo') }}">Comp B10</a>
+            <a href="https://github.com/dbenitez02" target="_blank">Github</a>
+        </nav>
+
+        <h1>Portfolio</h1>
+        <div id="intro" class="container">
+            <img id="self" src="/static/Website/Bio_Me2.jpg" alt="Ya boi about to drive a 911 GT3" style="width: 300px;">
+            <p>
+                I have been programming for about two years learning new things as I try out many languages like python.
+                It was around three years ago that I wanted to work with computers after deciding engineering is not my thing. I decided
+                to take a course on Java one day and from there I decided to have a career in programming.
+            </p>
+        </div>    
+        <div id="bio" class="container">
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    <h3>A little about myself</h3>
+                    <ul>
+                        <li>Name: Daniel Benitez</li>
+                        <li>Major: Computer Science</li>
+                        <li>Dream job: Full Stack Developer</li>
+                    </ul>  
+                </div>
+                <div class="col-4">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Playing guitar</li>
+                        <li>Playing video games</li>
+                        <li>Working with cars</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
